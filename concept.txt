@@ -1,0 +1,95 @@
+Ab ek important improvement
+
+Abhi user har letter type karega to:
+
+L
+
+↓
+
+La
+
+↓
+
+Lah
+
+↓
+
+Laho
+
+↓
+
+Lahor
+
+↓
+
+Lahore
+
+searchCity har key press par update ho rahi hai.
+
+Movie App me bhi yehi hota tha.
+
+Lekin Weather App me agar hum isi state par API laga denge to:  
+L
+
+↓
+
+API
+
+↓
+
+La
+
+↓
+
+API
+
+↓
+
+Lah
+
+↓
+
+API
+
+😨 Bohat sari unnecessary API calls hongi.
+
+Professional Solution
+
+Hum 2 states rakhenge.
+
+const [inputValue, setInputValue] = useState("");
+const [searchCity, setSearchCity] = useState("Lahore");
+
+Difference dekho.
+
+inputValue
+
+Sirf input box me likhne ke liye.
+
+searchCity
+
+Final city.
+
+API isi par chalegi.
+Typing
+
+↓
+
+inputValue
+
+↓
+
+Search Button
+
+↓
+
+setSearchCity(inputValue)
+
+↓
+
+API
+
+Isse unnecessary API calls nahi hongi.  
+
+
+debouncing bh es ki jaga use kr sakte hn 

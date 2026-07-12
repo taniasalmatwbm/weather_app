@@ -1,3 +1,50 @@
-.text{
-    text-align: center;
+body {
+    margin: 0;
+    background: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
+.app-container {
+    width: 80vw;
+    max-width: 1300px;
+    height: 85vh;
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 40px;
+}
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.mainContent {
+    width: 70%;
+    height: 100%;
+    background: #f6f7fb;
+}
+
+/* .Cards{
+#ffffff
+}
+
+
+.Primary {
+#5B6CFF
+}
+
+
+.Text{
+#1B1B1B
+
+}
+
+.Light{
+#8D8D8D
+} */

@@ -1,0 +1,25 @@
+import React from 'react'
+
+const Search = ({inputValue,setInputValue,searchCity,setSearchCity}) => {
+  return (
+    <div className='search'>
+        <div>
+            <img src="/search.svg" alt="searchbar"/>
+            <input
+            className=''
+             type='text'
+             placeholder='Search for a city.....'
+             value={inputValue}
+             onChange={(e)=>setInputValue(e.target.value)}
+             />
+
+             <button onClick={()=>{
+                 if (!inputValue.trim()) return;
+                  setSearchCity(inputValue.trim())
+                 }}>Search</button>  /* remove extra spaces */
+        </div>
+    </div>
+  )
+}
+
+export default Search
