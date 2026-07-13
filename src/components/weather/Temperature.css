@@ -2,14 +2,13 @@
     margin-top:10px;
 }
 
-.temperature h1{
-    font-size:72px;
-    font-weight:500;
+.temperature h3{
+    text-align: center;
     color:#1f1f1f;
 }
 
-.temperature h4{
-    margin-top:8px;
+.temperature p{
+   text-align: center;
     color:#888;
     font-weight:500;
 }

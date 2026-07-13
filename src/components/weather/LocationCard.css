@@ -1,4 +1,4 @@
- .locationCard{
+ /* .locationCard{
     margin-top:auto;
     position:relative;
     border-radius:18px;
@@ -18,4 +18,72 @@
     color:white;
     font-size:20px;
     font-weight:600;
+} */
+
+/* .locationCard{
+
+    width:85%;
+    margin:auto;
+   margin-top:35px;
+
+    background:#5B6CFF;
+    color:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+    position:relative;
+
+} */
+
+
+
+ /* .locationCard{
+    
+    background:#5B6CFF;
+    color:white;
+    border-radius:18px;
+    padding:10px;
+    text-align:center;
+} 
+
+.locationCard h4{
+
+    margin:0;
+    font-size:22px;
+
+}
+
+.locationCard p{
+
+    margin-top:8px;
+
+}  */
+
+.locationCard{
+    margin-top:30px;
+    background:linear-gradient(135deg,#5B6CFF,#7C6BFF);
+    color:#fff;
+
+    border-radius:20px;
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(91,108,255,.25);
+}
+
+.locationCard h3{
+    margin:0;
+    font-size:26px;
+    font-weight:700;
+}
+
+.locationCard p{
+    margin-top:6px;
+    font-size:15px;
+    opacity:.9;
+    letter-spacing:1px;
 }

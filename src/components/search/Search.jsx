@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Search.css'
 const Search = ({inputValue,setInputValue,searchCity,setSearchCity}) => {
   return (
     <div className='search'>

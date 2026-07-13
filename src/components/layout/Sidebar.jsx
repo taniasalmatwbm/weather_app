@@ -20,7 +20,7 @@ const Sidebar = ({inputValue, setInputValue, searchCity, setSearchCity,weather})
       searchCity={searchCity}
       setSearchCity={setSearchCity}
     />
-    <pre>{JSON.stringify(weather, null, 2)}</pre>
+    {/* <pre>{JSON.stringify(weather, null, 2)}</pre> */}
     <WeatherHero weather={weather} />
     <Temperature weather={weather} />
     <DateTime />

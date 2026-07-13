@@ -1,14 +1,36 @@
- .dateTime{
-    padding:20px 0;
-    border-bottom:1px solid #e5e5e5;
+.dateTime{
+  
+    text-align: center;
 }
 
-.dateTime h3{
+/* .dateTime h3{
     font-size:22px;
     font-weight:600;
-}
+} */
 
 .dateTime p{
     color:#888;
     margin-top:5px;
 }
+
+
+/* .dateTime{
+
+    text-align:center;
+    margin:25px 0;
+
+}
+
+.dateTime h3{
+
+    margin:0;
+    font-size:25px;
+
+}
+
+.dateTime p{
+
+    color:#777;
+    margin-top:10px;
+
+} */

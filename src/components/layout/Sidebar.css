@@ -1,12 +1,21 @@
- .sidebar{
+/* .sidebar > *{
+    margin-bottom:18px;
+} */
+
+.sidebar{
     width:30%;
-    background:#fff;
+    height:100%;
     padding:25px;
+    box-sizing:border-box;
+     
     display:flex;
     flex-direction:column;
+
+    overflow:hidden;
 }
 
-.weatherHero{
+
+/* .weatherHero{
     display:flex;
     justify-content:center;
     margin:20px 0;
@@ -63,4 +72,4 @@
     bottom:15px;
     left:15px;
     color:white;
-}
+} */

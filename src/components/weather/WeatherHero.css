@@ -1,11 +1,27 @@
- .weatherHero{
+ /* .weatherHero{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin:20px 0;
+    margin:10px 0;
+}
+
+/* .weatherHero img{
+    width:90px;
+   
+} */
+
+/* .weatherHero img{
+    width:100px;
+    object-fit:contain;
+} */ 
+
+.weatherHero{
+    display:flex;
+    justify-content:center;
 }
 
 .weatherHero img{
-    width:170px;
-    height:170px;
+    width:110px;
+    height:110px;
+    object-fit:contain;
 }

@@ -1,17 +1,19 @@
- import './Temperature.css'
- 
- const Temperature = ({ weather }) => {
+import "./Temperature.css";
+
+const Temperature = ({ weather }) => {
   if (!weather) return null;
 
   return (
     <div className="temperature">
-      <h1>{Math.round(weather.temperature)}°C</h1>
 
-      <h4>
+      <h3>{Math.round(weather.temperature)}°C</h3>
+
+      <p>
         H:{Math.round(weather.tempMax)}°
         &nbsp;&nbsp;
         L:{Math.round(weather.tempMin)}°
-      </h4>
+      </p>
+
     </div>
   );
 };

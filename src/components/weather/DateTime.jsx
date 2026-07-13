@@ -1,23 +1,30 @@
- import './DateTime.css'
- 
- const DateTime = () => {
-  const date = new Date();
+import "./DateTime.css";
 
-  const day = date.toLocaleDateString("en-US", {
-    weekday: "long",
-  });
+const DateTime = () => {
 
-  const time = date.toLocaleTimeString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
+    const now = new Date();
 
-  return (
-    <div className="dateTime">
-      <h3>{day}</h3>
-      <p>{time}</p>
-    </div>
-  );
-};
+    const day = now.toLocaleDateString("en-US",{
+        weekday:"long"
+    });
+
+    const time = now.toLocaleTimeString([],{
+        hour:"2-digit",
+        minute:"2-digit"
+    });
+
+    return(
+
+        <div className="dateTime">
+
+            <h3>{day}</h3>
+
+            <p>{time}</p>
+
+        </div>
+
+    )
+
+}
 
 export default DateTime;

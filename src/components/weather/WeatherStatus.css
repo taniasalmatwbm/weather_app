@@ -1,4 +1,4 @@
- .weatherStatus{
+ /* .weatherStatus{
     margin-top:20px;
 }
 
@@ -10,4 +10,27 @@
 
 .weatherStatus span{
     color:#777;
+} */
+
+
+.weatherStatus{
+
+    text-align:center;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+   
+
+}
+
+.weatherStatus p{
+
+    font-size:20px;
+    margin:0;
+
+}
+
+.weatherStatus span{
+
+    color:#777;
+
 }
