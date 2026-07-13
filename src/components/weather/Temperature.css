@@ -1,0 +1,15 @@
+ .temperature{
+    margin-top:10px;
+}
+
+.temperature h1{
+    font-size:72px;
+    font-weight:500;
+    color:#1f1f1f;
+}
+
+.temperature h4{
+    margin-top:8px;
+    color:#888;
+    font-weight:500;
+}

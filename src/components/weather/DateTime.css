@@ -1,0 +1,14 @@
+ .dateTime{
+    padding:20px 0;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.dateTime h3{
+    font-size:22px;
+    font-weight:600;
+}
+
+.dateTime p{
+    color:#888;
+    margin-top:5px;
+}

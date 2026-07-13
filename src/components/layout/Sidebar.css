@@ -1,0 +1,66 @@
+ .sidebar{
+    width:30%;
+    background:#fff;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+}
+
+.weatherHero{
+    display:flex;
+    justify-content:center;
+    margin:20px 0;
+}
+
+.weatherHero img{
+    width:180px;
+}
+
+.temperature h1{
+    font-size:70px;
+    margin:0;
+    font-weight:500;
+}
+
+.temperature h4{
+    color:#666;
+    margin-top:10px;
+}
+
+.dateTime{
+    padding:20px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.weatherStatus{
+    margin-top:20px;
+}
+
+.weatherStatus p{
+    font-size:20px;
+    font-weight:600;
+}
+
+.weatherStatus span{
+    color:#666;
+}
+
+.locationCard{
+    margin-top:auto;
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.locationCard img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+}
+
+.locationCard h3{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    color:white;
+}

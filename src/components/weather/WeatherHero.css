@@ -1,0 +1,11 @@
+ .weatherHero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:20px 0;
+}
+
+.weatherHero img{
+    width:170px;
+    height:170px;
+}

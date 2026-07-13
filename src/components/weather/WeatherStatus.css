@@ -1,0 +1,13 @@
+ .weatherStatus{
+    margin-top:20px;
+}
+
+.weatherStatus p{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.weatherStatus span{
+    color:#777;
+}
