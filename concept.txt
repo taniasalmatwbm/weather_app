@@ -93,3 +93,86 @@ Isse unnecessary API calls nahi hongi.
 
 
 debouncing bh es ki jaga use kr sakte hn 
+
+
+
+icon: data.weather[0].icon,
+
+API se icon code aata hai.
+
+Example:
+
+01d  → ☀️ Clear Sky (Day)
+01n  → 🌙 Clear Sky (Night)
+
+02d  → 🌤 Few Clouds
+
+03d  → ☁️ Scattered Clouds
+
+04d  → ☁️ Broken Clouds
+
+09d  → 🌧 Shower Rain
+
+10d  → 🌦 Rain
+
+11d  → ⛈ Thunderstorm
+
+13d  → ❄ Snow
+
+50d  → 🌫 Mist
+
+Lekin ye animation nahi deta.
+
+Ye sirf icon code deta hai.
+
+Phir hum React me logic likhenge:
+
+if(icon === "01d"){
+   // Sun Animation
+}
+
+if(icon === "09d"){
+   // Rain Animation
+}
+
+if(icon === "11d"){
+   // Thunder Animation
+}
+
+Isi icon ki base par hum Framer Motion ya Lottie animations show karenge.
+
+
+{
+  "list": [
+    {
+      "main": {
+        "aqi": 2
+      },
+      "components": {
+        "co": 201.94,
+        "pm2_5": 5.82,
+        "pm10": 8.5,
+        "o3": 68.66
+      }
+    }
+  ]
+}
+
+Yahan tum return kar sakti ho:
+
+return {
+    aqi: data.list[0].main.aqi,
+    components: data.list[0].components
+};
+
+
+//==================
+Ya agar tum har pollutant alag-alag card me dikhana chahti ho to:
+
+return {
+    aqi: data.list[0].main.aqi,
+    co: data.list[0].components.co,
+    pm25: data.list[0].components.pm2_5,
+    pm10: data.list[0].components.pm10,
+    o3: data.list[0].components.o3,
+};
