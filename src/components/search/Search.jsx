@@ -16,7 +16,7 @@ const Search = ({inputValue,setInputValue,searchCity,setSearchCity}) => {
              <button onClick={()=>{
                  if (!inputValue.trim()) return;
                   setSearchCity(inputValue.trim())
-                 }}>Search</button>  /* remove extra spaces */
+                 }}>Search</button> 
         </div>
     </div>
   )

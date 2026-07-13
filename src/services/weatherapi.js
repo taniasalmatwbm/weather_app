@@ -23,7 +23,7 @@ const BASE_URL = "https://api.openweathermap.org";
         }
 
         const data = await response.json()
-
+         console.log("getCoordinate data", data)
         if (data.length === 0) {
             throw new Error("City not found");
       
@@ -48,7 +48,7 @@ const BASE_URL = "https://api.openweathermap.org";
         throw new Error ("Failed to fetch weather "); 
      }
      const data = await response.json();
-     console.log("weather data",data);
+     console.log("getCurrentWeather",data);
 
     //  if(data.length==0){
     //     throw new Error (`weather fetch error`)
@@ -84,7 +84,7 @@ const BASE_URL = "https://api.openweathermap.org";
   }
  }
 
- export const getForeCast = async (lat,lon)=>{
+ export const getForecast = async (lat,lon)=>{
   try{
       const url = `${BASE_URL}/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
       const response = await fetch(url)
@@ -113,7 +113,7 @@ const BASE_URL = "https://api.openweathermap.org";
         throw new Error ("Failed to Air quality "); 
       }
      const data = await response.json();
-     console.log("forecast data",data.list);
+     console.log("Air Quality data", data.list);
 
       if (data.list || data.list.length === 0) {
      throw new Error("Air Quality not found");

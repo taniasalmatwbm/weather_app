@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainContent = () => {
+const MainContent = ({foreCast}) => {
   return (
     <>
      <div className='mainContent'>MainContent</div>
