@@ -115,14 +115,22 @@ const BASE_URL = "https://api.openweathermap.org";
      const data = await response.json();
      console.log("Air Quality data", data.list);
 
-      if (data.list || data.list.length === 0) {
-     throw new Error("Air Quality not found");
-    }
+    //   if (data.list || data.list.length === 0) {
+    //  throw new Error("Air Quality not found");
+    // }
     
-    return {
-    aqi: data.list[0].main.aqi,
-    components: data.list[0].components
-    };
+    // return {
+    // aqi: data.list[0].main.aqi,
+    // components: data.list[0].components
+    // };
+    if (!data.list || data.list.length === 0) {
+  throw new Error("Air Quality not found");
+}
+
+return {
+  aqi: data.list[0].main.aqi,
+  components: data.list[0].components,
+};
   }catch(error){
     throw new Error (`Air Quality error in catch ${error.message}`)
   }

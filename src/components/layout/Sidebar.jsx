@@ -5,12 +5,13 @@ import Temperature from "../weather/Temperature";
 import DateTime from "../weather/DateTime";
 import WeatherStatus from "../weather/WeatherStatus";
 import LocationCard from "../weather/LocationCard";
+import MainContent from "../layout/MainContent"
 import './Sidebar.css'
 
 
 
 
-const Sidebar = ({inputValue, setInputValue, searchCity, setSearchCity,weather}) => {
+const Sidebar = ({inputValue, setInputValue, searchCity, setSearchCity,weather,foreCast,airQuality}) => {
     
   return (
 <div className="sidebar">
@@ -26,6 +27,11 @@ const Sidebar = ({inputValue, setInputValue, searchCity, setSearchCity,weather})
     <DateTime />
     <WeatherStatus weather={weather} />
     <LocationCard weather={weather} />
+    <MainContent
+   foreCast={foreCast}
+   weather={weather}
+   airQuality={airQuality}
+/>
 </div>
       
   )

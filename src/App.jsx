@@ -27,8 +27,9 @@ function App() {
           try{
             const {lat, lon}  = await getCoordinates(searchCity.trim());
             const weather = await getCurrentWeather(lat,lon );
-            // console.log('weatherdata',weather) 
+            console.log('weatherdata',weather) 
             setWeather(weather)
+
          // yaha boht zada error face kiya maine me sary method ak sath 
          // call kr rehi the 3 method aur 3no ko call krne ky baad 3no ko
          // ak sath hi set kr rehi the jb ky mujhe hr method ky sath us ki state 
@@ -38,6 +39,7 @@ function App() {
             const forecast = await getForecast(lat,lon);
             setForeCast(forecast)
             const airQuality = await getAirQuality(lat,lon);
+            console.log("AQI Response:", airQuality);
              setAirQuality(airQuality)
           }catch(error){
             setError(error.message);
@@ -48,9 +50,13 @@ function App() {
          }
          weatherFetch()
      }, [searchCity])
-//        useEffect(() => {
-//   console.log("Weather State Updated:", weather);
-// }, [weather]);
+useEffect(() => {
+  console.log("Weather State:", weather);
+}, [weather]);
+
+useEffect(() => {
+  console.log("AirQuality State:", airQuality);
+}, [airQuality]);
   return (
     <div className="app-container">
     <Sidebar 
@@ -62,7 +68,11 @@ function App() {
     loading={loading}
     error={error}
     />
-    <MainContent foreCast={foreCast} />
+<MainContent
+   foreCast={foreCast}
+   weather={weather}
+   airQuality={airQuality}
+/>
     </div>
   )
 }

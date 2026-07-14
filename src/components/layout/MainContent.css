@@ -1,1 +1,6 @@
- 
+ .mainContent{
+    flex:1;
+    background:#f6f7fb;
+    padding:35px;
+     overflow:hidden;
+}

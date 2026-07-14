@@ -1,14 +1,20 @@
-import React from 'react'
+import ForecastList from "../forecast/ForecastList";
+import Highlights from "../hightlights/Highlights";
+import "./MainContent.css";
 
-const MainContent = ({foreCast}) => {
+const MainContent = ({ foreCast, weather, airQuality }) => {
   return (
-   
-     <div className='mainContent'>
-      MainContent
-      </div>
-   
-   
-  )
-}
+    <div className="mainContent">
 
-export default MainContent
+      <ForecastList foreCast={foreCast} />
+
+      <Highlights
+        weather={weather}
+        airQuality={airQuality}
+      />
+
+    </div>
+  );
+};
+
+export default MainContent;

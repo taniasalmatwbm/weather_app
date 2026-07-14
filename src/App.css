@@ -14,7 +14,7 @@ body{
 .app-container{
     width:1200px;
     max-width:95%;
-    height:90vh;
+    height:100vh;
 
     display:flex;
 
