@@ -1,13 +1,18 @@
 
 import "./LocationCard.css";
 
-const LocationCard = ({ weather }) => {
-  if (!weather) return null;
+const LocationCard = () => {
+ 
 
   return (
     <div className="locationCard">
-      <h3>{weather.city}</h3>
-      <p>{weather.country}</p>
+      {/* <h3>{weather.city}</h3>
+      <p>{weather.country}</p> */}
+      <img
+       src="/images/weatheriamge.jfif"
+         alt="Weather"
+       className="weather-image"
+        />
     </div>
   );
 };

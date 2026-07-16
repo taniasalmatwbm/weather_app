@@ -32,3 +32,26 @@ margin:8px 0;
 .forecastCard p{
     font-size:14px;
 }
+@media (max-width:768px){
+
+   
+    .forecastCard{
+        width:auto;
+        min-width:0;
+        padding:12px 8px;
+    }
+
+}
+/* @media (max-width:768px){
+
+.forecastRow{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:10px;
+
+}
+
+} */

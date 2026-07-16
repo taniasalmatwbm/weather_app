@@ -34,3 +34,44 @@ body{
     width:72%;
     background:#f6f7fb;
 }
+
+/* @media (max-width:768px){
+
+    .app-container{
+        flex-direction:column;
+        height:auto;
+        border-radius:20px;
+    }
+
+    .sidebar{
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+    }
+
+    .mainContent{
+        width:100%;
+        padding:15px;
+        box-sizing:border-box;
+    }
+
+} */
+
+
+@media (max-width:768px){
+
+    .app-container{
+        flex-direction:column;
+        height:auto;
+        border-radius:20px;
+    }
+
+    .sidebar{
+        width:100%;
+    }
+
+    .mainContent{
+        width:100%;
+    }
+
+}

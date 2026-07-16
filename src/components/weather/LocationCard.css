@@ -62,7 +62,7 @@
 
 }  */
 
-.locationCard{
+/* .locationCard{
     margin-top:30px;
     background:linear-gradient(135deg,#5B6CFF,#7C6BFF);
     color:#fff;
@@ -73,6 +73,11 @@
     text-align:center;
 
     box-shadow:0 10px 25px rgba(91,108,255,.25);
+} */
+
+ /* .locationCard{
+    width:90px;
+    margin:20px auto;
 }
 
 .locationCard h3{
@@ -86,4 +91,51 @@
     font-size:15px;
     opacity:.9;
     letter-spacing:1px;
+} */
+
+
+/* @media (max-width:768px){
+
+    .locationCard{
+
+        width:90px;
+        padding:12px;
+        margin:20px auto;
+
+    }
+
+    .locationCard h2{
+
+        font-size:18px;
+
+    }
+
+    .locationCard p{
+
+        font-size:12px;
+
+    }
+
+} */
+ .weather-image{
+    width:200px;        /* Image size */
+    height:100px;       /* Fixed height */
+    object-fit:cover;   /* Image stretch nahi hogi */
+    border-radius:20px; /* Rounded corners */
+    display:block;
+    margin:20px auto 0;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+         align-self:center;
+
+}
+
+@media(max-width:768px){
+
+.locationCard{
+
+width:100%;
+margin-top:20px;
+text-align: center;
+}
+
 }

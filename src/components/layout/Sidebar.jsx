@@ -27,13 +27,12 @@ const Sidebar = ({inputValue, setInputValue, searchCity, setSearchCity,weather,f
     <DateTime />
     <WeatherStatus weather={weather} />
     <LocationCard weather={weather} />
-    <MainContent
+    {/* <MainContent
    foreCast={foreCast}
    weather={weather}
    airQuality={airQuality}
-/>
-</div>
-      
+/> */}
+</div>  
   )
 }
 

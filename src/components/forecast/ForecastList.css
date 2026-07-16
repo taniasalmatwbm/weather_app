@@ -6,3 +6,16 @@ margin-top:20px;
 margin-bottom:35px;
 
 }
+@media(max-width:768px){
+
+.forecastRow{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:12px;
+
+}
+
+}

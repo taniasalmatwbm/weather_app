@@ -13,22 +13,22 @@ const Highlights = ({ weather, airQuality }) => {
             <div className="highlightGrid">
                 <div className="card">
                     <h4>Humidity</h4>
-                    <h1>{weather.humidity}%</h1>
+                    <h3>{weather.humidity}%</h3>
                 </div>
 
                 <div className="card">
                     <h4>Wind</h4>
-                    <h1>{weather.windSpeed} m/s</h1>
+                    <h3>{weather.windSpeed} m/s</h3>
                 </div>
 
                 <div className="card">
                     <h4>Visibility</h4>
-                    <h1>{weather.visibility / 1000} km</h1>
+                    <h3>{weather.visibility / 1000} km</h3>
                 </div>
 
                 <div className="card">
                     <h4>Air Quality</h4>
-                    <h1>{airQuality.aqi}</h1>
+                    <h3>{airQuality.aqi}</h3>
                 </div>
 
             </div>

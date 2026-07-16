@@ -35,3 +35,58 @@
 .search img{
     width:28px;
 }
+/* @media (max-width:768px){
+
+    .search{
+        margin-bottom:20px;
+    }
+
+    .search div{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        width:100%;
+    }
+
+    .search input{
+        flex:1;
+        min-width:180px;
+    }
+
+    .search button{
+        width:100%;
+    }
+
+} */
+
+
+
+
+@media(max-width:768px){
+
+.search{
+
+width:100%;
+
+}
+
+.search div{
+
+width:100%;
+
+}
+
+.search input{
+
+flex:1;
+
+}
+.search div{
+    gap:8px;
+}
+
+.search input{
+    padding:10px;
+}
+
+}
