@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background:#ececec;
+   background:linear-gradient(135deg,#EAF2FF,#F8FBFF);
 }
 
 #root{
@@ -15,13 +15,9 @@ body{
     width:1200px;
     max-width:95%;
     height:100vh;
-
     display:flex;
-
     background:white;
-
     border-radius:30px;
-
     overflow:hidden;
 }
 
